@@ -1,1 +1,1 @@
-alert tcp $EXTERNAL_NET any -> $HOME_NET 1080 (flags:U;msg:"TEST ALERT"; content:"hostip";offset:10;depth:10;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET 1080 (sid:1000984;flags:U;msg:"TEST ALERT"; content:"hostip";offset:10;depth:10;)
